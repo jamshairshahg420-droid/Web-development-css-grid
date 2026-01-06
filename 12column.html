@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Grid</title>
+    <style>
+        .container
+        {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 10px;
+        }
+        .box
+        {
+            background: steelblue;
+            color: white;
+            padding: 20px;
+        }
+        .col-6{
+            grid-column: span 6;
+        }
+        .col-3
+        {
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box col-6">6 Columns</div>
+        <div class="box col-3">3 Columns</div>
+        <div class="box col-3">3 Columns</div>
+    </div>
+</body>
+</html>
